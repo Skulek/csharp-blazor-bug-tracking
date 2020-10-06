@@ -8,8 +8,9 @@ namespace BugTrackerUI
 {
     public class Bug
     {
+        
         public int Id { get; set; }
-
+        [Required]
         public string Title { get; set; }
         [MinLength(10)]
         public string Description { get; set; }
